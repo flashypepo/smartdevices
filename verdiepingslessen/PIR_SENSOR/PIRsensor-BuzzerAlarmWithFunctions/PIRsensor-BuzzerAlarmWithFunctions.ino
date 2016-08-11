@@ -29,7 +29,7 @@
 #define PIR_SENSOR_PIN 7 // D7
 #define LED_PIN 8  // D8
 
-#define BUZZER_PIN 5  // of 5
+#define BUZZER_PIN 5  // D5
 #define PIR_SENSOR2_PIN 6 // D6
 
 void setup() {
