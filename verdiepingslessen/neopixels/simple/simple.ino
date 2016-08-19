@@ -12,7 +12,8 @@
 #define PIN            6 // 2016-0812 D6
 
 // How many NeoPixels are attached to the Arduino?
-#define NUMPIXELS      8 // 2016-0812 8 pixels on the stick
+#define NUMPIXELS     40//24//2*8 //8 // 2016-0816 2 sticks of 8 pixels on the stick
+//#define NUMPIXELS      8   // 2016-0812 8 pixels on the stick
 
 // When we setup the NeoPixel library, we tell it 
 // how many pixels, and which pin to use to send signals.

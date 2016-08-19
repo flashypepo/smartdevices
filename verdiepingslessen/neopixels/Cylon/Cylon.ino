@@ -8,7 +8,10 @@
 #include "FastLED.h"
 
 // How many leds in your strip?
-#define NUM_LEDS 8  // 2016-0812
+//#define NUM_LEDS 8  // 2016-0812
+// #define NUM_LEDS 2*8  // 2016-0816 2 sticks of 8-LEDS each
+// #define NUM_LEDS 12  // 2016-0816 1 ring of 12-LEDS
+#define NUM_LEDS 24  // 2016-0816 1 ring of 24-LEDS
 
 // For led chips like Neopixels, which have a data line, ground, and power, you just
 // need to define DATA_PIN.  For led chipsets that are SPI based (four wires - data, clock,
@@ -24,7 +27,7 @@ void setup() {
 	Serial.println("resetting...");
  
   //FastLED.addLeds<WS2812, DATA_PIN, RGB>(leds, NUM_LEDS); // 2016-0812 WS2812
-  FastLED.addLeds<WS2812, DATA_PIN, RGB>(leds, NUM_LEDS); // 2016-0812 WS2812
+  FastLED.addLeds<WS2812, DATA_PIN, GRB>(leds, NUM_LEDS); // 2016-0816 WS2812, GRB-order
 	FastLED.setBrightness(84);
 }
 
