@@ -1,0 +1,17 @@
+// test 2016_1004 op Windesheim: Arduino UNO + W5100 ethernet-shield
+
+WebClient::setup() - starting...
+connecting...
+connected
+HTTP/1.1 303 See Other
+Server: squid/3.4.8
+Date: Tue, 04 Oct 2016 18:26:55 GMT
+Content-Length: 0
+Location: http://qmanage.windesheim.nl?redirect
+X-Cache: MISS from windesheim-core1
+X-Cache-Lookup: MISS from windesheim-core1:3129
+Via: 1.1 windesheim-core1 (squid/3.4.8)
+Connection: close
+
+
+disconnecting.

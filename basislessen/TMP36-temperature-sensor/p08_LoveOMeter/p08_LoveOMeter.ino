@@ -1,5 +1,7 @@
 /*
-   LoveOMeter with an 8-stick NeoPixel
+   LoveOMeter with an 64 matrix/8-stick NeoPixels
+   
+   2016-1008 PePo new, adoptions for 64-pixel matrix - chinese
    2016-0812 PePo new, adoptions for WS2812 8-pixel stick - chinese
    Note: Vcc for neoixels miust be >5V, so connect LiPy (7.7V) directly
          on breadboard
@@ -9,7 +11,7 @@
 #include <Math.h> // 2016-0812: instead of potentiometer value
 
 // How many leds are connected?
-#define NUM_LEDS 8
+#define NUM_LEDS 64//8
 
 // Define the Pins
 #define DATA_PIN 6 // D6
@@ -32,14 +34,14 @@ void loop() {
 
   // Clear the existing led values
   FastLED.clear();
-
+  FastLED.setBrightness(10);
   // Change led colors
   for (int led = 0; led < numLedsToLight; led++) {
-    if (led < 2) leds[led] = CRGB::Green;
-    if (led >= 2 & led < 4) leds[led] = CRGB::Orange;
-    if (led >= 4) leds[led] = CRGB::Red;
-  }
-  FastLED.setBrightness(50);
+    if (led < numLedsToLight/4) leds[led] = CRGB::Green;
+    if (led >= numLedsToLight/4 & led < numLedsToLight/2) leds[led] = CRGB::Blue;
+    if (led >= numLedsToLight/2) leds[led] = CRGB::Red;
+  } 
+  //FastLED.setBrightness(10);
   FastLED.show();
 
   delay(500);

@@ -24,7 +24,7 @@
  */
 
 //* named constant for the pin the sensor is connected to
-const int sensorPin = A0; // breadboard, Starterskit
+const int sensorPin = A2; // breadboard, Starterskit
 /*/
 // 2016-0810 toegevoegd:
 const int sensorPin = A1; // Grove-protoshield

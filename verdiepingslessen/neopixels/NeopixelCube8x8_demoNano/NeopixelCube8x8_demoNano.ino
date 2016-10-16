@@ -24,7 +24,7 @@ FASTLED_USING_NAMESPACE
 //#define CLK_PIN   4
 #define LED_TYPE    WS2812 // 2016-0812
 #define COLOR_ORDER GRB
-#define NUM_LEDS    64 // 52//2*8 // 2016-0816: #LEDS = #sticks * 8
+#define NUM_LEDS    8 //64 // 24+64 // 52//2*8 // 2016-0816: #LEDS = #sticks * 8
 
 CRGB leds[NUM_LEDS];
 
