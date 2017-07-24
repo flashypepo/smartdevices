@@ -13,8 +13,8 @@
         GND: GND
  */
  
-int trigPin = 6; // 2016_0810 changed: 11;    //Trig - green Jumper
-int echoPin = 5; // 2016_0810 changed: 12;    //Echo - yellow Jumper
+int trigPin = 3; // 2016_0810 changed: 11;    //Trig - green Jumper
+int echoPin = 2; // 2016_0810 changed: 12;    //Echo - yellow Jumper
 long duration, cm, inches;
  
 void setup() {
